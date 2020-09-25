@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A340F658251D5FF400ACA634 /* AdLibDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340F657251D5FF400ACA634 /* AdLibDisplay.swift */; };
+		A340F65A251D621100ACA634 /* AdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340F659251D621100ACA634 /* AdLib.swift */; };
 		A38830FD251D33F500995DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38830FC251D33F500995DFE /* AppDelegate.swift */; };
 		A38830FF251D33F500995DFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38830FE251D33F500995DFE /* SceneDelegate.swift */; };
 		A3883101251D33F500995DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3883100251D33F500995DFE /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A340F657251D5FF400ACA634 /* AdLibDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibDisplay.swift; sourceTree = "<group>"; };
+		A340F659251D621100ACA634 /* AdLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLib.swift; sourceTree = "<group>"; };
 		A38830F9251D33F500995DFE /* AdLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38830FC251D33F500995DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A38830FE251D33F500995DFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				A3883105251D33F700995DFE /* Assets.xcassets */,
 				A3883107251D33F700995DFE /* LaunchScreen.storyboard */,
 				A388310A251D33F700995DFE /* Info.plist */,
+				A340F657251D5FF400ACA634 /* AdLibDisplay.swift */,
+				A340F659251D621100ACA634 /* AdLib.swift */,
 			);
 			path = AdLib;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3883101251D33F500995DFE /* ViewController.swift in Sources */,
+				A340F65A251D621100ACA634 /* AdLib.swift in Sources */,
 				A38830FD251D33F500995DFE /* AppDelegate.swift in Sources */,
 				A38830FF251D33F500995DFE /* SceneDelegate.swift in Sources */,
+				A340F658251D5FF400ACA634 /* AdLibDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
