@@ -15,6 +15,7 @@ class AdLibDisplay: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.accessibilityIdentifier = "AdLibScreen"
         globalAdLib.generateAdLib()
         adLibTextView.text = globalAdLib.AdLib
     }

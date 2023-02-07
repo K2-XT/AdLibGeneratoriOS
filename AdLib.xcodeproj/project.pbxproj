@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		A3883109251D33F700995DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3883107251D33F700995DFE /* LaunchScreen.storyboard */; };
 		A3883114251D33F700995DFE /* AdLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3883113251D33F700995DFE /* AdLibTests.swift */; };
 		A388311F251D33F700995DFE /* AdLibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A388311E251D33F700995DFE /* AdLibUITests.swift */; };
+		F079B14D2991998B005FADEE /* Features in Resources */ = {isa = PBXBuildFile; fileRef = F079B14C2991998B005FADEE /* Features */; };
+		F079B150299199F4005FADEE /* CucumberishObjectiveCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F079B14F299199F4005FADEE /* CucumberishObjectiveCFile.m */; };
+		F659A2E01AFFC213D9F7AD59 /* Pods_AdLibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A1351AAA2F0CB6538575CB /* Pods_AdLibUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20FAE1070B7FBD03D36B5DEA /* Pods-AdLibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdLibUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AC0211701718A3B484B2F36 /* Pods-AdLibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdLibUITests.release.xcconfig"; path = "Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A340F657251D5FF400ACA634 /* AdLibDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibDisplay.swift; sourceTree = "<group>"; };
 		A340F659251D621100ACA634 /* AdLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLib.swift; sourceTree = "<group>"; };
 		A38830F9251D33F500995DFE /* AdLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +58,10 @@
 		A388311A251D33F700995DFE /* AdLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A388311E251D33F700995DFE /* AdLibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibUITests.swift; sourceTree = "<group>"; };
 		A3883120251D33F700995DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A1351AAA2F0CB6538575CB /* Pods_AdLibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdLibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F079B14C2991998B005FADEE /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
+		F079B14E299199F4005FADEE /* AdLibUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdLibUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F079B14F299199F4005FADEE /* CucumberishObjectiveCFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CucumberishObjectiveCFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +83,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F659A2E01AFFC213D9F7AD59 /* Pods_AdLibUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66DA6683B55F5B2C660C4B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4A1351AAA2F0CB6538575CB /* Pods_AdLibUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708D0F257D4BD347F28C751A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20FAE1070B7FBD03D36B5DEA /* Pods-AdLibUITests.debug.xcconfig */,
+				9AC0211701718A3B484B2F36 /* Pods-AdLibUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A38830F0251D33F500995DFE = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +114,8 @@
 				A3883112251D33F700995DFE /* AdLibTests */,
 				A388311D251D33F700995DFE /* AdLibUITests */,
 				A38830FA251D33F500995DFE /* Products */,
+				708D0F257D4BD347F28C751A /* Pods */,
+				66DA6683B55F5B2C660C4B4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,8 +157,11 @@
 		A388311D251D33F700995DFE /* AdLibUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F079B14C2991998B005FADEE /* Features */,
 				A388311E251D33F700995DFE /* AdLibUITests.swift */,
 				A3883120251D33F700995DFE /* Info.plist */,
+				F079B14F299199F4005FADEE /* CucumberishObjectiveCFile.m */,
+				F079B14E299199F4005FADEE /* AdLibUITests-Bridging-Header.h */,
 			);
 			path = AdLibUITests;
 			sourceTree = "<group>";
@@ -176,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3883129251D33F700995DFE /* Build configuration list for PBXNativeTarget "AdLibUITests" */;
 			buildPhases = (
+				5A7558A4EDD418B04B29B179 /* [CP] Check Pods Manifest.lock */,
 				A3883116251D33F700995DFE /* Sources */,
 				A3883117251D33F700995DFE /* Frameworks */,
 				A3883118251D33F700995DFE /* Resources */,
+				DD6A11766640F625EC96E369 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +243,7 @@
 					};
 					A3883119251D33F700995DFE = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1420;
 						TestTargetID = A38830F8251D33F500995DFE;
 					};
 				};
@@ -255,10 +290,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F079B14D2991998B005FADEE /* Features in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A7558A4EDD418B04B29B179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdLibUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6A11766640F625EC96E369 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A38830F5251D33F500995DFE /* Sources */ = {
@@ -285,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F079B150299199F4005FADEE /* CucumberishObjectiveCFile.m in Sources */,
 				A388311F251D33F700995DFE /* AdLibUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,6 +559,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLibTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +581,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLibTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,9 +599,13 @@
 		};
 		A388312A251D33F700995DFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FAE1070B7FBD03D36B5DEA /* Pods-AdLibUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLibUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +614,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytonpehrson.AdLibUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdLibUITests/AdLibUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AdLib;
@@ -535,9 +624,13 @@
 		};
 		A388312B251D33F700995DFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC0211701718A3B484B2F36 /* Pods-AdLibUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 25DQ8HVJ3B;
 				INFOPLIST_FILE = AdLibUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,6 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytonpehrson.AdLibUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdLibUITests/AdLibUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AdLib;

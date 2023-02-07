@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.accessibilityIdentifier = "GeneratorScreen"
         nounOneField.text = globalAdLib.noun1
         nounTwoField.text = globalAdLib.noun2
         verbOneField.text = globalAdLib.verb1
