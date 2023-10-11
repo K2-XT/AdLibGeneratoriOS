@@ -1,16 +1,20 @@
 PODS:
-  - Cucumberish (1.4.0)
+  - CucumberSwift (4.3.2):
+    - CucumberSwiftExpressions
+  - CucumberSwiftExpressions (0.0.8)
 
 DEPENDENCIES:
-  - Cucumberish
+  - CucumberSwift
 
 SPEC REPOS:
   trunk:
-    - Cucumberish
+    - CucumberSwift
+    - CucumberSwiftExpressions
 
 SPEC CHECKSUMS:
-  Cucumberish: 6cbd0c1f50306b369acebfe7d9f514c9c287d26c
+  CucumberSwift: b745a218fc02420bd21d20deb3e2f5ed5fa665a2
+  CucumberSwiftExpressions: 0c9efd1c1fc499bf54aaaf95395e9bad51ba3200
 
-PODFILE CHECKSUM: 9d7ae3d1226bbb6a1f202e54b15468a051c5d77b
+PODFILE CHECKSUM: 25966157581d04a932b7aa4666ebc615ea9a36d3
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.13.0

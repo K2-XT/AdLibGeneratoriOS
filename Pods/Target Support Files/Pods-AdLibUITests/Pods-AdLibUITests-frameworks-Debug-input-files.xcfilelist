@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-AdLibUITests/Pods-AdLibUITests-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Cucumberish/Cucumberish.framework
+${BUILT_PRODUCTS_DIR}/CucumberSwift/CucumberSwift.framework
+${BUILT_PRODUCTS_DIR}/CucumberSwiftExpressions/CucumberSwiftExpressions.framework

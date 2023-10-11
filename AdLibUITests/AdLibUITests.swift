@@ -5,7 +5,7 @@
 //  Created by Payton Pehrson on 9/24/20.
 //  Copyright © 2020 Payton Pehrson. All rights reserved.
 //
-
+/*
 import XCTest
 import Foundation
 import Cucumberish
@@ -102,3 +102,4 @@ extension XCUIElement { //Credit to Agost Biro https://stackoverflow.com/a/73847
         self.typeText("\(text)\n")
     }
 }
+*/

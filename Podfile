@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'AdLibUITests' do
 
-  pod 'Cucumberish'
+  pod 'CucumberSwift'
 
 end
 

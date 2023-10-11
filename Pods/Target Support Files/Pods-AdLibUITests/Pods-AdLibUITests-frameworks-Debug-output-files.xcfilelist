@@ -1,1 +1,2 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cucumberish.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CucumberSwift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CucumberSwiftExpressions.framework
