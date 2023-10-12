@@ -20,24 +20,24 @@ extension Cucumber: StepImplementation {
         Given("the user launches the app") { _, _ in
             XCUIApplication().launch()
         }
-        And("they enter \"([^\\\"]*)\" into the \"([^\\\"]*)\" field") { matches, _ in
-            let inputText = (matches[0])
-            let inputFieldID = (matches[1])
+        MatchAll("they enter \"([^\\\"]*)\" into the \"([^\\\"]*)\" field") { matches, _ in
+            let inputText = (matches[1])
+            let inputFieldID = (matches[2])
             let inputField = XCUIApplication().textFields[inputFieldID]
             XCTAssert(inputField.waitForExistence(timeout: 10))
             inputField.tap()
             inputField.clearAndEnterText(text: inputText)
         }
         When("they tap the text \"([^\\\"]*)\"") { args, _ in
-            let textToBeTapped = (args[0])
+            let textToBeTapped = (args[1])
             XCUIApplication().staticTexts[textToBeTapped].tap()
         }
         Then("the user should see the generator screen") { _, _ in
             Cucumber.waitForElementToAppear(XCUIApplication().otherElements["GeneratorScreen"])
         }
         Then("they should see the text \"([^\\\"]*)\" in the textview \"([^\\\"]*)\"") { args, _ in
-            let expectedText = (args[0])
-            let textViewID = (args[1])
+            let expectedText = (args[1])
+            let textViewID = (args[2])
             let textView = XCUIApplication().textViews[textViewID]
             XCTAssertTrue(textView.value as? String == expectedText)
         }
